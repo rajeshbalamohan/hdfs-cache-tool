@@ -1,6 +1,5 @@
 hdfs-cache-tool
 ===============
-
 Simple tool to iteratively cache a hdfs locations.
 
 Compilation:
@@ -14,5 +13,8 @@ hadoop jar ./target/hdfs-cache-tool-0.0.1-SNAPSHOT.jar -Dpath=<globPath; support
 path, poolName are mandatory parameters
 
 e.g: hadoop jar ./target/hdfs-cache-tool-0.0.1-SNAPSHOT.jar -Dpath=/tmp/folder/*,/user/hive/*/2/* -DpoolName=test -Dverbose=true
+ 
+
 e.g: hadoop jar ./target/hdfs-cache-tool-0.0.1-SNAPSHOT.jar -Dpath=/tmp/folder/* -DpoolName=test -Dverbose=true
+
 e.g: hadoop jar ./target/hdfs-cache-tool-0.0.1-SNAPSHOT.jar -Dpath=/tmp/folder/* -DpoolName=test -Dttl=-1
